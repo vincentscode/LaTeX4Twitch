@@ -1,45 +1,52 @@
 {
-  "name": "LaTeX for Twitch Chat Extension",
+  "name": "LaTeX for Twitch Chat",
   "version": "1.1.1",
   "description": "Support LaTeX, plotting, graph, math calculation, highlight source, .. within Twitch Chat",
-
-  "permissions": ["https://*.twitch.tv/*", "clipboardRead", "clipboardWrite", "storage"],
-
+  "permissions": [
+    "clipboardRead",
+    "clipboardWrite",
+    "storage"
+  ],
   "options_ui": {
     "page": "setup.html",
     "open_in_tab": true
   },
-
   "content_scripts": [
     {
-      "matches": ["https://*.twitch.tv/*"],
+      "matches": [
+        "https://*.twitch.tv/*"
+      ],
       "run_at": "document_idle",
       "all_frames": true,
-      "js": ["loader.js"]
+      "js": [
+        "loader.js"
+      ]
     }
   ],
-
-  "web_accessible_resources": [ 
-    "*.js",
-    "/math/*",
-    "/search/*",
-    "/decorator/*",
-    "/styles/*.css",
-    "/images/*"
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "*.js",
+        "/math/*",
+        "/search/*",
+        "/decorator/*",
+        "/styles/*.css",
+        "/images/*"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
   ],
-
   "icons": {
     "16": "images/logo-16.png",
     "32": "images/logo-32.png",
     "48": "images/logo-48.png",
     "128": "images/logo-128.png"
   },
-
-  "browser_specific_settings": {
-    "gecko": {
-      "update_url": "https://github.com/RintarouTW/LaTeX4TwitchChat/raw/release/web-ext-artifacts/update.json"
-    }
-  },
-
-  "manifest_version": 2
+  "manifest_version": 3,
+  "content_security_policy": {},
+  "host_permissions": [
+    "https://*.twitch.tv/*"
+  ]
 }
