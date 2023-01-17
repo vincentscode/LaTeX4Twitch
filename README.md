@@ -1,13 +1,7 @@
-# $\LaTeX$ in Twitch Chat
+# $\LaTeX$ for Twitch
 
 A simple Chrome extension to render and copy $\LaTeX$ in Twitch Chat messages.
-Some functions via commands, ex: plotting a function, draw graphs, matrix calculation, etc.
-
-Firefox users may check [here](https://github.com/RintarouTW/LaTeX4TwitchChat/wiki/For-Firefox).
-
-I'm from Taiwan, sorry for my poor English. You may check [my Twitch channel](https://twitch.tv/RintarouTW) to see the live demo.
-
-<div id="twitch-embed"></div>
+Based on https://github.com/RintarouTW/LaTeX4TwitchChat/.
 
 ## Features
 
@@ -23,27 +17,9 @@ I'm from Taiwan, sorry for my poor English. You may check [my Twitch channel](ht
 - Auto load the image below the link of URL for the white listed users which is configured in the extension options.
 - Search on Wikipedia
 - 5 Themes
-
-### Experimental
-
 - SageMath cell support
 
-## Install
-
-1. [Download](https://github.com/RintarouTW/LaTeX4TwitchChat/zipball/release) the release branch as a zip and decompress it to a folder.
-
-   [下載](https://github.com/RintarouTW/LaTeX4TwitchChat/zipball/release) release branch 成 .zip 檔案，並解壓縮。
-2. In your Chrome URL, type `chrome://extensions/`, it'll lead you to the extensions management page.
-
-   在 Chrome URL 中輸入 `chrome://extensions/`，進入延伸套件管理頁面。
-3. Turn on the **Developer Mode** with the toggle on the top right corner of the page.
-
-   開啟右上角 **開發人員模式**。
-4. Click on `Load unpacked`  button and choose the decompressed directory.
-
-   按下載入未封裝項目按鍵並選擇解壓縮後的檔案夾，即完成安裝。
-
-## Usage in Twitch Chat Room
+## Usage in Twitch Chat
 
 ### Inline Mode
 
@@ -199,6 +175,3 @@ You may enable it by changing the isExperimental() return value to true.
 ```
 
 check https://sagemath.org for more usages.
-
-<script src="./assets/init.js"></script>
-

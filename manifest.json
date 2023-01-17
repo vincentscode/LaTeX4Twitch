@@ -1,5 +1,5 @@
 {
-  "name": "LaTeX for Twitch Chat",
+  "name": "LaTeX for Twitch",
   "version": "1.1.1",
   "description": "Support LaTeX, plotting, graph, math calculation, highlight source, .. within Twitch Chat",
   "permissions": [
